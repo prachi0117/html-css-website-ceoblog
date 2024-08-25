@@ -1,0 +1,790 @@
+/* Existing Styles
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0px 20px;
+}
+
+h1 {
+    font-family: 'Times New Roman', serif;
+    font-size: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+.hero {
+    display: flex;
+    background-color: #7d5db0;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    margin-right: 20px;
+    width: 150px;  /* Adjust the width as needed */
+    height: auto; 
+}
+
+.profile-info h2 {
+    margin-bottom: 5px;
+}
+/* General styles for all social media icons */
+.social-icons a {
+    display: inline-block;
+    width: 40px; /* Set the size of the circle */
+    height: 40px;
+    line-height: 40px; /* Vertically center the icon */
+    text-align: center; /* Horizontally center the icon */
+    border-radius: 50%; /* Make the background a circle */
+    background-color: #8a74ae; /* Blue background */
+    color: white; /* White icon color */
+    font-size: 20px; /* Size of the icon */
+    margin-right: 10px; /* Space between icons */
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+.social-icons a:hover {
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+}
+
+
+/* 
+.column-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: auto;
+} */
+
+.main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.content {
+    display: flex;
+}
+
+aside{
+
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding-right: 20px;
+    padding:30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+} 
+
+.categories h3 {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.categories ul {
+    font-size: medium;
+    margin-top:10px;
+    list-style: none;
+}
+
+.categories li {
+    margin-top: 7px;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+.categories li input[type="radio"] {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    cursor: pointer;
+}
+
+.categories li input[type="radio"]:checked + label {
+    font-weight: bold;
+    color: #007BFF;
+    background-color: #e6f7ff;
+    border-radius: 5px;
+    padding: 3px 10px;
+}
+
+.categories li label {
+    cursor: pointer;
+}
+
+
+/* Ensure .important-links occupies full width and aligns below .categories */
+
+
+.important-links h3 {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.important-links ul {
+    list-style: none;
+}
+
+.important-links li {
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+
+.important-links li a.link-title {
+    font-weight: bold;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.important-links li a.link-title:hover {
+    text-decoration: underline;
+}
+
+.important-links li p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.important-links li a.link-type {
+    color: #007BFF;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.important-links li a.link-type:hover {
+    text-decoration: underline;
+}
+/* Continue with existing styles */
+/* Updated Styles */
+
+/* Ensure .latest-post and .comment-box align correctly */
+.latest-post {
+    width: 100%;
+    border: 1px solid rgba(194, 190, 190, 0.222);
+    margin-bottom: 20px; /* Ensure there is space between the post and the comments */
+}
+
+.latest-post img {
+    width: 100%;
+    border-radius: 5px;
+}
+.post {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    border:1px solid black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.post-summary {
+    color: #848080;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.read-full {
+    color: #007BFF;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.read-full:hover {
+    text-decoration: underline;
+}
+.post-interactions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between; /* Distributes space between items */
+    align-items: center; /* Centers items vertically */
+    font-size: large;
+}
+
+.post-interactions .left-icons {
+    display: flex;
+    gap: 15px; /* Space between comment and like icons */
+}
+
+.post-interactions .right-icon {
+    margin-left: auto; /* Pushes the share icon to the right */
+}
+
+
+.post-interactions span {
+    cursor: pointer;
+}
+
+.post-title {
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: bolder;
+    color: #333;
+}
+
+.post-content {
+    padding: 20px;
+}
+
+.post-category {
+    font-size: 14px;
+    font-weight: bold;
+    color: #272525;
+}
+.post-tag {
+    background: linear-gradient(to right, #add8e6, #0033cc); 
+    color: white;
+    padding: 5px 10px; 
+    font-weight: bold; 
+    display: inline-block; 
+    margin-left: 20px;
+}
+
+
+.comment-box {
+    background-color: rgba(194, 190, 190, 0.222);
+    margin: 20px 0; 
+    padding: 15px;
+    border-radius: 8px; 
+}
+
+.comment-box h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.comments {
+    margin-top: 20px;
+}
+
+.comment {
+    display: flex;
+    margin-bottom: 20px;
+}
+.comment-image-wrapper {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px; 
+    overflow: hidden;
+}
+
+.comment-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 8px;
+}
+
+.comment-body {
+    flex-grow: 1;
+}
+
+.comment-body h4 {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.comment-body p {
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+.comment-actions {
+    display: flex;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 12px;
+    color: #007BFF;
+}
+.comment-time{
+    font-weight: 100;
+    margin-left: 20px;
+    color: #555;
+}
+
+.comment-actions span {
+    cursor: pointer;
+}
+
+.comment-actions span:hover {
+    color: #007BFF;
+    text-decoration: underline;
+}
+
+
+.related-posts {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.related-posts .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.related-posts .box {
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.related-posts .box img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.related-posts .box h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.related-posts .box p {
+    font-size: 14px;
+    color: #666;
+}
+
+.comment-tag {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    font-size: 14px; 
+    margin: 10px 0;
+}
+
+.comment-tag p {
+    background: linear-gradient(to right, #8eaab3, #79afdf); 
+    color: white;
+    padding: 5px 10px; 
+    font-weight: bold; 
+    display: inline-block; 
+}
+.comment-para{
+    color:white;
+}
+
+.comment-tag span {
+    margin: 0;
+    color: #666; /* Adjust color as needed */
+    font-size: 12px; /* Adjust font size if needed */
+}
+
+.pagination {
+    display: flex;
+    justify-content: center; /* Center the pagination */
+    align-items: center;
+    margin: 20px 0; /* Adjust margin as needed */
+    font-family: Arial, sans-serif;
+}
+
+.pagination a {
+
+    text-decoration: none;
+    color: #007BFF; /* Blue color */
+    margin: 0 5px; /* Space between links */
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.page-circle {
+    border-radius: 50%; 
+    border: 2px solid #007BFF; /* Circle border color */
+    width: 30px;
+    height: 30px;
+    display: flex;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+#one{
+    color:white;
+}
+.active {
+    background-color: #007BFF; /* Active circle background */
+    
+}
+
+
+.page-next {
+    font-weight: bold;
+    color: #007BFF;
+}
+/* Smartphones (portrait) */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    header {
+        width: 100%;
+        padding: 10px;
+        flex-direction: column; /* Stack header items vertically */
+        align-items: flex-start; /* Align items to the start (left) */
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .hero {
+        padding: 10px;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    body {
+        padding: 10px;
+      }
+    
+      header {
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+        align-items: center; /* Center the header items */
+      }
+    
+      h1 {
+        font-size: 24px; /* Adjust font size for smaller screens */
+        text-align: center; /* Center the title */
+      }
+    
+      .hero {
+        padding: 10px;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+      }
+    
+      nav {
+        width: 100%;
+        margin-top: 10px;
+      }
+    
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 0;
+        list-style: none;
+      }
+    
+      nav ul li {
+        width: 100%;
+      }
+    
+      nav ul li a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        border-radius: 4px;
+      }
+    .profile img {
+        width: 120px;
+    }
+
+    .profile-info h2 {
+        font-size: 18px;
+    }
+
+    .social-icons a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 16px;
+        margin-right: 6px;
+    }
+
+    .post-content {
+        padding: 10px;
+    }
+
+    .comment-body p {
+        font-size: 12px;
+    }
+
+    .comment-image {
+        width: 35px;
+        height: 35px;
+    }
+
+    .box h4 {
+        font-size: 16px;
+    }
+
+    .pagination .page-circle, .pagination .page-number, .pagination .page-next {
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+
+    .related-posts .row {
+        flex-direction: column; /* Stack posts vertically */
+        gap: 10px; /* Space between posts */
+    }
+
+    .related-posts .box {
+        width: 100%; /* Make each box take full width */
+        box-sizing: border-box; /* Include padding and border in the element’s total width and height */
+    }
+
+    .latest-post img {
+        height: auto; /* Adjust image height to maintain aspect ratio */
+        max-height: 250px; /* Optional: limit height for large images */
+    }
+}
+
+/* Smartphones (landscape) */
+@media (max-width: 767px) and (orientation: landscape) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .profile {
+        margin-bottom: 10px;
+    }
+
+    .social-icons a {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 18px;
+        margin-right: 8px;
+    }
+
+    .column-container {
+        flex-direction: column;
+    }
+
+    .categories, .important-links {
+        min-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .post-content {
+        padding: 15px;
+    }
+
+    .post-interactions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .comment-box {
+        margin-top: 15px;
+    }
+
+    .comment-image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .related-posts .row {
+        flex-direction: column;
+    }
+
+    .box {
+        min-width: 100%;
+    }
+
+    .pagination {
+        flex-direction: column;
+    }
+
+    .page-circle, .page-number, .page-next {
+        padding: 8px 10px;
+    }
+}
+
+/* Tablets (portrait) */
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    .hero {
+        padding: 15px;
+    }
+
+    .profile img {
+        width: 140px;
+    }
+
+    .profile-info h2 {
+        font-size: 20px;
+    }
+
+    .social-icons a {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 18px;
+        margin-right: 8px;
+    }
+
+    .post-content {
+        padding: 15px;
+    }
+
+    .comment-body p {
+        font-size: 14px;
+    }
+
+    .comment-image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .box h4 {
+        font-size: 18px;
+    }
+
+    .pagination .page-circle, .pagination .page-number, .pagination .page-next {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+}
+
+/* Tablets (landscape) */
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+    .hero {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+    .profile {
+        margin-left: 20px;
+    }
+
+    .social-icons a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+    .post-content {
+        padding: 20px;
+    }
+
+    .comment-body p {
+        font-size: 16px;
+    }
+
+    .comment-image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .box h4 {
+        font-size: 20px;
+    }
+
+    .pagination .page-circle, .pagination .page-number, .pagination .page-next {
+        padding: 10px 12px;
+        font-size: 16px;
+    }
+}
